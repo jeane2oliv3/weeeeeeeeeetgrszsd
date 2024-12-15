@@ -1,50 +1,76 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-  <header>
-    <p>Jeane</p>
-    <ul>
-      <a href="#">about</a>
-      <a href="#">portfólio</a>
-      <a href="#">skills</a>
-      <a href="#">contact</a>
-    </ul>
+  <header class="header">
+    <a href="#home" class="logo">Weslles <span>Gomes</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#skills">Portifólio</a>
+    </nav>
+    <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#portfolio" onclick="closeMenu()">Portfólio</a>
+    </div>
   </header>
-  <div class="main">
-    <div class="left">
-      <h1>Meu nome é <span class="nome-h1">JEANE FERREIRA</span></h1>
-      <h2>Futura Desenvolvedora Back-end</h2>
-      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore         et dolore magna.</p>
+
+  <section class="home" id="home">
+    <div class="home-content">
+         <h1> Olá, meu nome é <span>Weslles</span></h1>
+         <h3 class="text-animation">Trabalho com <span></span></h3> 
+         <p>Meu nome é Weslles, sou designer gráfico especializado na criação de artes visuais impactantes e estratégicas. Minha experiência abrange o desenvolvimento de flyers, logotipos e outros materiais criativos que comunicam marcas de forma clara e atrativa. Com um olhar atento para os detalhes e paixão pela estética, busco transformar ideias em projetos que conectam e encantam.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/gomiziw/?utm_source=ig_web_button_share_sheet"><i class='bx bxl-instagram-alt' ></i></a>
+          <a href="https://wa.me/559884519905?text=Seja%20Bem-Vindo"><i class='bx bxl-whatsapp'></i></a>
+          
+        </div>
+
+        <div class="btn-group">
+          <a href="https://www.canva.com/design/DAGZYaUgmkI/WLpoxsref5LGSSUJWU9_Nw/edit?utm_content=DAGZYaUgmkI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn">Baixar Currículo</a>
+
+        </div>
+
+
     </div>
- 
-    <div class="right">
-      <img src="eu.png">
+    <div class="home-img">
+      <img src="imgs/eu.jpeg" alt="corno">
     </div>
-  </div>
-  <shooter>
-    <ul>
-      <div class="linke">
-        <img src="linkedin.png">
-        <a href="www.linkedin.com/in/jeane-ferreira-de-oliveira-602b63293">LinkedIn</a>
-      </div>
-      <div class="git">
-        <img src="github.png">
-        <a href="#">Github</a>
-      </div>
-      <div class="insta">
-        <img src="instagram.png">
-        <a href="#">Instagram</a>
-      </div>
-    </ul>
-  </shooter>
+  </section>
+
+  
+  <section class="skills" id="skills">  
+    <h2 class="heading">Minhas Artes</h2>
+      <div class="skills-box">
+        <div class="gallery">
+          <img src="imgs/image1.jpeg" alt="Image 1">
+          <img src="imgs/image2.jpeg" alt="Image 2">
+          <img src="imgs/image3.jpeg" alt="Image 3">
+          <img src="imgs/image4.jpeg" alt="Image 4">
+          <img src="imgs/image5.jpeg" alt="Image 5">
+          <img src="imgs/image9.jpeg" alt="Image 6">
+          <img src="imgs/image7.jpeg" alt="Image 7">
+          <img src="imgs/image8.jpeg" alt="Image 8">
+          <img src="imgs/image12.jpeg" alt="Image 9">
+          <img src="imgs/image10.jpeg" alt="Image 10">
+          <img src="imgs/image11.jpeg" alt="Image 11">
+          <img src="imgs/image6.jpeg" alt="Image 11">
+          </div>
+      </div> 
+  </section>
   <script src="script.js"></script>
 </body>
 
